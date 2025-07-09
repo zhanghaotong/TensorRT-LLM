@@ -123,8 +123,7 @@ class GenerationExecutor(ABC):
             kv_cache_retention_config: Optional[KvCacheRetentionConfig] = None,
             disaggregated_params: Optional[DisaggregatedParams] = None,
             postproc_params: Optional[PostprocParams] = None,
-            return_perf_metrics: Optional[bool] = False
-    ) -> GenerationResult:
+            return_perf_metrics: Optional[bool] = False) -> GenerationResult:
         """Generate output for the given prompt token ids in the asynchronous mode.
         Asynchronous generation accepts single prompt only.
         """
